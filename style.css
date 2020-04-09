@@ -1,0 +1,108 @@
+/* brisanje privzetega stila root elementa, ki ga dokument določi sam */
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+/* postavitev in ureditev list-elementov */
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+
+/* centriranje kontejnerja z nasimi divisioni - google, form, buttons */
+
+.container {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control {
+    padding: 2.5rem;
+    padding-top: 1.5rem;
+    position: relative;
+}
+
+/* urejanje velikosti in stila območja za iskanje */
+
+input {
+    height: 2.9rem;
+    width: 31rem;
+    border-radius: 100px;
+    border: 1px lightgray solid;
+    padding: 0rem 2.5rem;
+    font-size: 1rem;
+}
+
+input:hover {
+    box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+}
+
+/* izbris modre crte ko kliknemo oz fokusiramo na input */
+
+input:focus {
+    outline: none;
+}
+
+/* postavitev in urejanje gumbov */
+
+button {
+    padding: 0.7rem;
+    border: none;
+    background-color: #f2f2f2;
+    margin: -1rem 0.3rem;
+    width: 8rem;
+    height: 2.3rem;
+    border-radius: 3px;
+    color: #5F6368;
+}
+
+/* animacija sence gumba, ko z miško preidemo čez njega */
+
+button:hover {
+    border: 1px solid rgb(165, 165, 165);
+}
+
+/* urejanje in postavitev ikon kot sta grid, magnify glass in avatar */
+
+.fa-search {
+    font-size: 0.9rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 3.6rem;
+    color: #9AA0A6;
+}
+
+.fa-th {
+    font-size: 1.2rem;
+    color: grey;
+}
+
+.avatar {
+    width: 2.5rem;
+    border-radius: 300px;
+}
